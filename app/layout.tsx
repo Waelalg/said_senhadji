@@ -3,12 +3,13 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { AnimatedBackground } from "@/components/animated-background"
+import { Footer } from "@/components/footer"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "AI Developer Portfolio | Higher School of Computer Science",
+  title: "SENHADJI Said | AI Developer & Web Developer Portfolio",
   description:
-    "Portfolio of an AI and Full-Stack Developer specializing in Machine Learning, Deep Learning, NLP, and Modern Web Technologies",
+    "Portfolio of SENHADJI Said - AI and Full-Stack Developer specializing in Machine Learning, Deep Learning, NLP, and Modern Web Technologies",
   generator: "v0.app",
 }
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark scroll-smooth">
       <body className="font-sans antialiased">
         <AnimatedBackground />
         <div className="fixed inset-0 pointer-events-none z-0">
@@ -36,6 +37,7 @@ export default function RootLayout({
           <Suspense fallback={<div>Loading...</div>}>
             <Navigation />
             {children}
+            <Footer />
           </Suspense>
         </div>
       </body>
