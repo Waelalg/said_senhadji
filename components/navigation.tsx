@@ -38,7 +38,7 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="text-xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
             SENHADJI Said
           </Link>
@@ -50,14 +50,14 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-all hover:text-primary relative group",
-                  pathname === item.href ? "text-primary" : "text-muted-foreground",
+                  "text-sm font-medium transition-all hover:text-purple-400 relative group",
+                  pathname === item.href ? "text-purple-400" : "text-muted-foreground",
                 )}
               >
                 {item.label}
                 <span
                   className={cn(
-                    "absolute -bottom-1 left-0 h-0.5 bg-primary transition-all",
+                    "absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all",
                     pathname === item.href ? "w-full" : "w-0 group-hover:w-full",
                   )}
                 />
@@ -69,7 +69,7 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden hover:bg-primary/20 text-foreground"
+            className="md:hidden hover:bg-purple-600/20 hover:text-purple-400 text-foreground"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -87,8 +87,10 @@ export function Navigation() {
                 className={cn(
                   "block px-4 py-3 text-base font-medium rounded-lg transition-all",
                   pathname === item.href
-                    ? "bg-primary/20 text-primary border border-primary/50"
-                    : "text-foreground hover:bg-secondary hover:text-primary border border-transparent",
+                    ? /* Purple background for active mobile nav item */
+                      "bg-purple-600/20 text-purple-300 border border-purple-500/70"
+                    : /* Purple hover effect for mobile nav items */
+                      "text-foreground hover:bg-purple-600/10 hover:text-purple-400 border border-transparent",
                 )}
               >
                 {item.label}

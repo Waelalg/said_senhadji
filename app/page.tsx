@@ -63,12 +63,12 @@ export default function HomePage() {
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-[calc(100vh-4rem)] flex items-center relative">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-[120px] animate-pulse-glow" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-[120px] animate-glow-blue" />
+        <div className="absolute top-20 right-10 w-72 h-72 bg-purple-600/30 rounded-full blur-[120px] animate-pulse-glow" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-600/30 rounded-full blur-[120px] animate-glow-blue" />
 
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full relative z-10">
           <div className="space-y-8 order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-medium border border-primary/50 animate-pulse-glow backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-600/30 text-purple-300 text-sm font-medium border border-purple-500/70 animate-pulse-glow backdrop-blur-sm">
               <SparklesIcon />
               <span>Available for Freelance Work</span>
             </div>
@@ -76,7 +76,7 @@ export default function HomePage() {
             <div className="space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient">
+                <span className="bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradient">
                   SENHADJI Said
                 </span>
               </h1>
@@ -93,7 +93,7 @@ export default function HomePage() {
               <Link href="/projects">
                 <Button
                   size="lg"
-                  className="gap-2 w-full sm:w-auto group bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-all shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40"
+                  className="gap-2 w-full sm:w-auto group bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 transition-all shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 text-white"
                 >
                   View My Work <ArrowRightIcon />
                 </Button>
@@ -102,7 +102,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto bg-transparent border-primary/50 hover:bg-primary/20 hover:border-primary backdrop-blur-sm"
+                  className="w-full sm:w-auto bg-transparent border-purple-500/70 text-foreground hover:bg-purple-600/20 hover:border-purple-400 hover:text-purple-300 backdrop-blur-sm"
                 >
                   More About Me
                 </Button>
@@ -114,7 +114,7 @@ export default function HomePage() {
                 variant="ghost"
                 size="icon"
                 asChild
-                className="hover:text-primary hover:bg-primary/20 hover:scale-110 transition-all backdrop-blur-sm"
+                className="hover:text-purple-400 hover:bg-purple-600/20 hover:scale-110 transition-all backdrop-blur-sm"
               >
                 <a
                   href="https://github.com/SenhadjiMSaid"
@@ -129,7 +129,7 @@ export default function HomePage() {
                 variant="ghost"
                 size="icon"
                 asChild
-                className="hover:text-accent hover:bg-accent/20 hover:scale-110 transition-all backdrop-blur-sm"
+                className="hover:text-blue-400 hover:bg-blue-600/20 hover:scale-110 transition-all backdrop-blur-sm"
               >
                 <a
                   href="https://www.linkedin.com/in/said-senhadji-ab326a214/"
@@ -144,7 +144,7 @@ export default function HomePage() {
                 variant="ghost"
                 size="icon"
                 asChild
-                className="hover:text-primary hover:bg-primary/20 hover:scale-110 transition-all backdrop-blur-sm"
+                className="hover:text-purple-400 hover:bg-purple-600/20 hover:scale-110 transition-all backdrop-blur-sm"
               >
                 <a href="mailto:ms.senhadji@esi-sba.dz" aria-label="Email">
                   <MailIcon />
@@ -155,9 +155,9 @@ export default function HomePage() {
 
           <div className="relative order-1 lg:order-2">
             <div className="relative w-full aspect-square max-w-lg mx-auto animate-float">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/30 to-primary/40 rounded-3xl blur-3xl animate-pulse-glow" />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary rounded-3xl opacity-50 blur-xl animate-rotate-slow" />
-              <div className="relative rounded-3xl overflow-hidden border-2 border-primary/50 shadow-2xl shadow-primary/30 backdrop-blur-sm">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/50 via-blue-600/40 to-purple-600/50 rounded-3xl blur-3xl animate-pulse-glow" />
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 rounded-3xl opacity-60 blur-xl animate-rotate-slow" />
+              <div className="relative rounded-3xl overflow-hidden border-2 border-purple-500/70 shadow-2xl shadow-purple-500/40 backdrop-blur-sm">
                 <Image
                   src="/images/ai-developer.jpg"
                   alt="AI Development Workspace"
@@ -175,14 +175,14 @@ export default function HomePage() {
       {/* Quick Highlights */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-border/50 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
             What I Do
           </h2>
           <div className="grid sm:grid-cols-3 gap-8">
-            <div className="group relative space-y-4 text-center p-8 rounded-2xl border-2 border-border/50 hover:border-primary/70 transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="group relative space-y-4 text-center p-8 rounded-2xl border-2 border-border/50 hover:border-purple-500/70 transition-all hover:shadow-xl hover:shadow-purple-500/30 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/30 to-accent/30 text-primary mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600/30 to-blue-600/30 text-purple-400 mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-purple-500/20">
                   <BrainIcon />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Artificial Intelligence</h3>
@@ -192,10 +192,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="group relative space-y-4 text-center p-8 rounded-2xl border-2 border-border/50 hover:border-accent/70 transition-all hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="group relative space-y-4 text-center p-8 rounded-2xl border-2 border-border/50 hover:border-blue-500/70 transition-all hover:shadow-xl hover:shadow-blue-500/30 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/30 to-primary/30 text-accent mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-accent/20">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600/30 to-purple-600/30 text-blue-400 mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-blue-500/20">
                   <CodeIcon />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Full-Stack Development</h3>
@@ -205,10 +205,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="group relative space-y-4 text-center p-8 rounded-2xl border-2 border-border/50 hover:border-primary/70 transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="group relative space-y-4 text-center p-8 rounded-2xl border-2 border-border/50 hover:border-purple-500/70 transition-all hover:shadow-xl hover:shadow-purple-500/30 hover:-translate-y-2 backdrop-blur-sm bg-card/50">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/30 to-accent/30 text-primary mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600/30 to-blue-600/30 text-purple-400 mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-purple-500/20">
                   <RocketIcon />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Available for Hire</h3>
